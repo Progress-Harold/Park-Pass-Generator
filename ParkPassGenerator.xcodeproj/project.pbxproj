@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EDE79001DA61F8B00C84BB0 /* CreateNewPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE78FF1DA61F8B00C84BB0 /* CreateNewPassViewController.swift */; };
+		6EDEC8911DA0D35F00A0E9B1 /* GuestArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDEC8901DA0D35F00A0E9B1 /* GuestArchive.swift */; };
 		A6FA9A381DA066D300837804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FA9A371DA066D300837804 /* AppDelegate.swift */; };
 		A6FA9A3A1DA066D300837804 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FA9A391DA066D300837804 /* ViewController.swift */; };
 		A6FA9A3D1DA066D300837804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FA9A3B1DA066D300837804 /* Main.storyboard */; };
 		A6FA9A401DA066D300837804 /* ParkPassGenerator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6FA9A3E1DA066D300837804 /* ParkPassGenerator.xcdatamodeld */; };
 		A6FA9A421DA066D300837804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FA9A411DA066D300837804 /* Assets.xcassets */; };
 		A6FA9A451DA066D300837804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FA9A431DA066D300837804 /* LaunchScreen.storyboard */; };
+		A6FA9A4D1DA0670500837804 /* TypeStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FA9A4C1DA0670500837804 /* TypeStructure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6EDE78FF1DA61F8B00C84BB0 /* CreateNewPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewPassViewController.swift; sourceTree = "<group>"; };
+		6EDEC8901DA0D35F00A0E9B1 /* GuestArchive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuestArchive.swift; sourceTree = "<group>"; };
 		A6FA9A341DA066D300837804 /* ParkPassGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkPassGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FA9A371DA066D300837804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6FA9A391DA066D300837804 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		A6FA9A411DA066D300837804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6FA9A441DA066D300837804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6FA9A461DA066D300837804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FA9A4C1DA0670500837804 /* TypeStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeStructure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				A6FA9A371DA066D300837804 /* AppDelegate.swift */,
 				A6FA9A391DA066D300837804 /* ViewController.swift */,
+				6EDEC8901DA0D35F00A0E9B1 /* GuestArchive.swift */,
+				A6FA9A4C1DA0670500837804 /* TypeStructure.swift */,
 				A6FA9A3B1DA066D300837804 /* Main.storyboard */,
 				A6FA9A411DA066D300837804 /* Assets.xcassets */,
 				A6FA9A431DA066D300837804 /* LaunchScreen.storyboard */,
 				A6FA9A461DA066D300837804 /* Info.plist */,
 				A6FA9A3E1DA066D300837804 /* ParkPassGenerator.xcdatamodeld */,
+				6EDE78FF1DA61F8B00C84BB0 /* CreateNewPassViewController.swift */,
 			);
 			path = ParkPassGenerator;
 			sourceTree = "<group>";
@@ -140,6 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FA9A401DA066D300837804 /* ParkPassGenerator.xcdatamodeld in Sources */,
+				A6FA9A4D1DA0670500837804 /* TypeStructure.swift in Sources */,
+				6EDE79001DA61F8B00C84BB0 /* CreateNewPassViewController.swift in Sources */,
+				6EDEC8911DA0D35F00A0E9B1 /* GuestArchive.swift in Sources */,
 				A6FA9A3A1DA066D300837804 /* ViewController.swift in Sources */,
 				A6FA9A381DA066D300837804 /* AppDelegate.swift in Sources */,
 			);
@@ -303,6 +315,7 @@
 				A6FA9A4B1DA066D300837804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
