@@ -89,8 +89,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func PopulateData(_ sender: AnyObject) {
-        BigLabelTextElements(randomGuest())
-
+        if MainMenu == .guest {
+            randomGuestSelection()
+        } else if MainMenu == .employee {
+            randomEmployeeSelection()
+        } else if MainMenu == .manager {
+            randomManagerSelection()
+        } else if MainMenu == .vender {
+        
+        }
     }
     //Data Input
     @IBOutlet weak var firstName: UITextField!
@@ -145,7 +152,7 @@ class ViewController: UIViewController {
         MainButton4?.addTarget(self, action: #selector(MainButtonPressMethod(_:)), for: .touchUpInside)
 
     }
-    
+    //Adjusts the subMenu Buttons to be "nil" when the manager button is press
     func setNilTitleForManager() {
         MainMenu = .manager
         SubButtonOne.setTitle("", for: UIControlState())
@@ -517,16 +524,55 @@ class ViewController: UIViewController {
         
     }
     //--------------
+    func randomGuestSelection() {
+        let randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: GuestArchive.count)
+        let randomPerson = GuestArchive[randomNumber]
     
-    //How we get a random Guest to populate
-    func randomGuest()-> (Employee) {
-        //random Number generator
-        let randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: EmployeeArchive.count)
-        let RandomPerson = EmployeeArchive[randomNumber]
-        return RandomPerson
+        let fName = randomPerson.fName
+        let lName = randomPerson.lName
+        
+        firstName.text = fName
+        lastName.text = lName
         
     }
     
+    func randomEmployeeSelection() {
+        let randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: GuestArchive.count)
+        let randomPerson = EmployeeArchive[randomNumber]
+    
+        let fName = randomPerson.fName
+        let lName = randomPerson.lName
+        
+        firstName.text = fName
+        lastName.text = lName
+    
+    }
+    func randomManagerSelection() {
+        let randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: ManagerArchive.count)
+        let randomPerson = ManagerArchive[randomNumber]
+        
+        let fName = randomPerson.fName
+        let lName = randomPerson.lName
+        
+        firstName.text = fName
+        lastName.text = lName
+    
+    }
+    func randomSelectionVendor() {
+        let randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: VenderEmployeeArchive.count)
+        let randomPerson = VenderEmployeeArchive[randomNumber]
+        
+        let fName = randomPerson.fName
+        let lName = randomPerson.lName
+        
+        firstName.text = fName
+        lastName.text = lName
+    
+    }
+    
+    
+    
+    //How we get a random Guest to populate
     //--------------
     
     func AreaAccess(inputType: String) -> Bool {
