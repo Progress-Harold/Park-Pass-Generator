@@ -498,6 +498,10 @@ class ViewController: UIViewController {
         //***
         Pass["Access"] = access1
         Pass["Notes"] = note
+        
+        let new = Adult(fName: inputFName!, lName: inputLName!, note: note!)
+        
+        newCollection.append(new)
 
     }
 

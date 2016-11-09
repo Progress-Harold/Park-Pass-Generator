@@ -207,6 +207,8 @@ class Adult: Foundation {
 
 
 
+
+
 //Discounts for Food and Merch
 enum DiscountType {
     case Guest
